@@ -22,7 +22,8 @@ add_action( 'wp_footer', 'add_livewebinar_js' );
 function add_livewebinar_js() {
     $current_usernames = wp_get_current_user();
     $fullname = $current_usernames->user_firstname . " " . $current_usernames->user_lastname;
-    $license_key = get_metadata( get_the_ID(), 'livewebinar_license_key', true );
+    $post_id = get_the_ID();
+    $license_key = get_post_meta( $post_id, 'livewebinar_license_key', true );
 
     echo "<script type='text/javascript'>
       var _options = {
