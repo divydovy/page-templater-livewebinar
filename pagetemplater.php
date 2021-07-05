@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Page Template Plugin : 'Good To Be Bad'
-Plugin URI: http://www.wpexplorer.com/wordpress-page-templates-plugin/
-Version: 1.1.0
-Author: WPExplorer
-Author URI: http://www.wpexplorer.com/
+Plugin Name: Page Template Plugin : 'LiveWebinar'
+Plugin URI: https://github.com/divydovy/page-templater-livewebinar
+Version: 1.0
+Author: divydovy
+Author URI: http://www.divydovy.com/
 */
 
 class PageTemplater {
@@ -75,7 +75,7 @@ class PageTemplater {
 
 		// Add your templates to this array.
 		$this->templates = array(
-			'goodtobebad-template.php' => 'It\'s Good to Be Bad',
+			'livewebinar-template.php' => 'Live Webinar',
 		);
 
 	}
